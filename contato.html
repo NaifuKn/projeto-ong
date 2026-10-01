@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PlaceHolder - Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ONG PLACEHOLDER - Contatos</h1>
+        
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Informações de contato</h2>
+
+            <p>Telefone: 11 99999-9999</p>
+            <p>E-mail: example@gmail.com</p>
+            <p>Endereço: Rua ???, nº 11</p>
+            <p>Horário de atendimento: 07:00 - 18:00</p>
+
+        </section>
+
+        <section>
+
+            <h2>Formulário para contato</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <label for="Nome">Nome completo:</label>
+                    <input type="text" id="Nome" required>
+
+                    <p></p>
+
+                    <label for="Email">E-mail:</label>
+                    <input type="email" id="Email" required>
+
+                    <p></p>
+
+                    <label for="Telefone">Telefone:</label>
+                    <input
+                        type="tel"
+                        id="Telefone"
+                        pattern="[0-9]{10,11}"
+                        required
+                    >
+
+                    <p></p>
+
+                    <label for="CPF">CPF:</label>
+                    <input
+                        type="text"
+                        id="CPF"
+                        pattern="[0-9]{11}"
+                        required
+                    >
+
+                    <p></p>
+
+                    <label for="DataNascimento">
+                        Data de nascimento:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="DataNascimento"
+                        required
+                    >
+
+                </fieldset>
+
+                <p></p>
+
+                <fieldset>
+
+                    <legend>Endereço</legend>
+
+                    <label for="Endereco">Endereço:</label>
+                    <input type="text" id="Endereco" required>
+
+                    <p></p>
+
+                    <label for="CEP">CEP:</label>
+                    <input
+                        type="text"
+                        id="CEP"
+                        pattern="[0-9]{8}"
+                        required
+                    >
+
+                    <p></p>
+
+                    <label for="Cidade">Cidade:</label>
+                    <input type="text" id="Cidade" required>
+
+                    <p></p>
+
+                    <label for="Estado">Estado:</label>
+                    <input type="text" id="Estado" required>
+
+                </fieldset>
+
+                <p></p>
+
+                <fieldset>
+
+                    <legend>Mensagem</legend>
+
+                    <label for="Assunto">Assunto:</label>
+                    <input type="text" id="Assunto" required>
+
+                    <p></p>
+
+                    <label for="Mensagem">Mensagem:</label>
+                    <textarea id="Mensagem" required></textarea>
+
+                </fieldset>
+
+                <p></p>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - ONG PLACEHOLDER</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

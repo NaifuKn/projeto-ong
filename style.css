@@ -1,0 +1,164 @@
+body {
+    background-color: #f5f5f5;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  
+}
+
+img {
+  border: 3px solid blue;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.projeto{
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+#titulo-principal {
+  color: darkblue;
+  font-size: 32px;
+  text-align: center;
+}
+
+.lista-projetos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projeto:hover {
+  background-color: lightblue;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px gray;
+}
+
+input:focus {
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+
+input:valid {
+  border: 2px solid green;
+  border-radius: 5px;
+
+}
+
+input:invalid {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+button:focus {
+    outline: 2px solid orange;
+    box-shadow: 0 0 5px gray;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+.badge{
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.alerta {
+  background-color: lightgreen;
+  color: darkgreen;
+  border: 2px solid green;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.toast {
+  background-color: #222222;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 4px 10px gray;
+  transition: 0.3s;
+}
+
+.toast:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .lista-projetos {
+        flex-direction: column;
+    }
+
+}
