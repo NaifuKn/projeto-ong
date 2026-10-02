@@ -155,6 +155,37 @@ button:disabled {
   transform: scale(1.05);
 }
 
+body.alto-contraste {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.alto-contraste header,
+.alto-contraste footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.alto-contraste a {
+    color: #FFFF00;
+}
+
+.alto-contraste .projeto {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFF00;
+}
+
+.alto-contraste button {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+.alto-contraste :focus-visible {
+    outline: 3px solid #FFFF00;
+    outline-offset: 3px;
+}
+
 @media (max-width: 768px) {
 
     .lista-projetos {
