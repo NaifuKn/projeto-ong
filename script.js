@@ -142,3 +142,11 @@ if (temaSalvo === "true") {
 }
 
 console.log("JavaScript conectado!");
+
+// Funcionalidade: mensagem de boas-vindas
+
+function boasVindas() {
+    console.log("Bem-vindo ao projeto da ONG!");
+}
+
+boasVindas();
